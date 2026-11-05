@@ -1,0 +1,13 @@
+{
+  "baseline": 2.7196777099743485,
+  "shared": 2.7204597720410675,
+  "grouped": 2.7698355939937755,
+  "decode_pairs": 2.7699698389624245,
+  "decode_async": 2.770328452985268,
+  "full_pairs_async": 2.7698970130295493,
+  "full_async": 2.719903759949375,
+  "full_pairs": 2.770277295028791,
+  "full_deferred_parallel": 2.77041542599909,
+  "full_nvenc_single": 0.0,
+  "full_nvenc_matched": 0.0
+}

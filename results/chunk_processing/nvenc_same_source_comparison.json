@@ -1,0 +1,19 @@
+{
+  "source": "raccoon_full_async_assembled.mp4",
+  "method": "Decode the same CPU-path MP4, then re-encode it once with each encoder; compare each re-encode to that common decoded source.",
+  "x264_veryfast_crf20": {
+    "bytes": 23083164,
+    "psnr_db": 46.580485,
+    "ssim": 0.993289
+  },
+  "nvenc_p5_vbr_3500": {
+    "bytes": 22748451,
+    "psnr_db": 46.532,
+    "ssim": 0.992967
+  },
+  "nvenc_p5_vbr_3700": {
+    "bytes": 24104461,
+    "psnr_db": 46.896844,
+    "ssim": 0.993404
+  }
+}

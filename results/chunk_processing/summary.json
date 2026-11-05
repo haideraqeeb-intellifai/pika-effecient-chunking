@@ -1,0 +1,144 @@
+{
+  "same_latents_capture_seconds": 271.629,
+  "original_grouped_full_seconds": 415.359,
+  "original_four_serial_seconds": 432.484,
+  "variants": {
+    "decode_serial": {
+      "decode_and_save_seconds": 144.066,
+      "full_generation_estimate_seconds": 415.695,
+      "gpu_peak_gib": 11.292,
+      "vae_node_seconds": 130.817,
+      "save_node_seconds": 12.716
+    },
+    "decode_serial_repeat": {
+      "decode_and_save_seconds": 143.322,
+      "full_generation_estimate_seconds": 414.951,
+      "gpu_peak_gib": 20.558,
+      "vae_node_seconds": 130.356,
+      "save_node_seconds": 12.48
+    },
+    "decode_pairs": {
+      "decode_and_save_seconds": 138.562,
+      "full_generation_estimate_seconds": 410.191,
+      "gpu_peak_gib": 16.736,
+      "vae_node_seconds": 124.731,
+      "save_node_seconds": 12.858
+    },
+    "decode_async": {
+      "decode_and_save_seconds": 134.385,
+      "full_generation_estimate_seconds": 406.014,
+      "gpu_peak_gib": 15.925,
+      "vae_node_seconds": 130.911,
+      "save_node_seconds": 3.236
+    },
+    "decode_pairs_async": {
+      "decode_and_save_seconds": 133.133,
+      "full_generation_estimate_seconds": 404.762,
+      "gpu_peak_gib": 16.736,
+      "vae_node_seconds": 124.84,
+      "save_node_seconds": 8.04
+    }
+  },
+  "video_vs_serial": [
+    {
+      "variant": "decode_pairs",
+      "chunk": 1,
+      "video_psnr_db": "42.892778",
+      "audio_exact": true
+    },
+    {
+      "variant": "decode_pairs",
+      "chunk": 2,
+      "video_psnr_db": "42.960047",
+      "audio_exact": true
+    },
+    {
+      "variant": "decode_pairs",
+      "chunk": 3,
+      "video_psnr_db": "42.958798",
+      "audio_exact": true
+    },
+    {
+      "variant": "decode_pairs",
+      "chunk": 4,
+      "video_psnr_db": "42.749944",
+      "audio_exact": true
+    },
+    {
+      "variant": "decode_async",
+      "chunk": 1,
+      "video_psnr_db": "44.291772",
+      "audio_exact": true
+    },
+    {
+      "variant": "decode_async",
+      "chunk": 2,
+      "video_psnr_db": "44.018393",
+      "audio_exact": true
+    },
+    {
+      "variant": "decode_async",
+      "chunk": 3,
+      "video_psnr_db": "44.729066",
+      "audio_exact": true
+    },
+    {
+      "variant": "decode_async",
+      "chunk": 4,
+      "video_psnr_db": "43.915482",
+      "audio_exact": true
+    },
+    {
+      "chunk": 1,
+      "video_psnr_db": "42.892778",
+      "audio_exact": true,
+      "variant": "decode_pairs_async"
+    },
+    {
+      "chunk": 2,
+      "video_psnr_db": "42.962582",
+      "audio_exact": true,
+      "variant": "decode_pairs_async"
+    },
+    {
+      "chunk": 3,
+      "video_psnr_db": "42.962034",
+      "audio_exact": true,
+      "variant": "decode_pairs_async"
+    },
+    {
+      "chunk": 4,
+      "video_psnr_db": "42.745774",
+      "audio_exact": true,
+      "variant": "decode_pairs_async"
+    }
+  ],
+  "serial_repeat_vs_serial": [
+    {
+      "chunk": 1,
+      "repeat_psnr_db": "43.941767"
+    },
+    {
+      "chunk": 2,
+      "repeat_psnr_db": "inf"
+    },
+    {
+      "chunk": 3,
+      "repeat_psnr_db": "44.247172"
+    },
+    {
+      "chunk": 4,
+      "repeat_psnr_db": "44.231208"
+    }
+  ],
+  "denoise_batch_2": "Rejected by MiniMaxH3Model._forward: MiniMax H3 supports batch size 1",
+  "full_end_to_end_pairs_async_seconds": 405.983,
+  "full_end_to_end_pairs_async_gpu_peak_gib": 31.583,
+  "full_end_to_end_pairs_async_stitch_seconds": 2.77,
+  "full_end_to_end_pairs_async_total_with_stitch_seconds": 408.754,
+  "full_end_to_end_pairs_async_assembled_video": "/home/raqeeb/code/pika-chunk-test/results/raccoon_full_pairs_async_assembled.mp4",
+  "full_assembled_comparison_vs_grouped": {
+    "video_psnr_db": 42.658378,
+    "audio_exact": true
+  }
+}

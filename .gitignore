@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+.publish-git/
+
+# Model parameters and checkpoints stay outside this repository.
+assets/**/*.safetensors

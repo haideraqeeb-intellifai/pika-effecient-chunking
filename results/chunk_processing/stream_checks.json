@@ -1,0 +1,162 @@
+[
+  {
+    "variant": "decode_serial",
+    "chunk": 1,
+    "video_frames": 294,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_serial",
+    "chunk": 2,
+    "video_frames": 311,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_serial",
+    "chunk": 3,
+    "video_frames": 294,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_serial",
+    "chunk": 4,
+    "video_frames": 311,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_pairs",
+    "chunk": 1,
+    "video_frames": 294,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_pairs",
+    "chunk": 2,
+    "video_frames": 311,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_pairs",
+    "chunk": 3,
+    "video_frames": 294,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_pairs",
+    "chunk": 4,
+    "video_frames": 311,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_async",
+    "chunk": 1,
+    "video_frames": 294,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_async",
+    "chunk": 2,
+    "video_frames": 311,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_async",
+    "chunk": 3,
+    "video_frames": 294,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_async",
+    "chunk": 4,
+    "video_frames": 311,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_pairs_async",
+    "chunk": 1,
+    "video_frames": 294,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_pairs_async",
+    "chunk": 2,
+    "video_frames": 311,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_pairs_async",
+    "chunk": 3,
+    "video_frames": 294,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  },
+  {
+    "variant": "decode_pairs_async",
+    "chunk": 4,
+    "video_frames": 311,
+    "resolution": [
+      720,
+      1280
+    ],
+    "audio_present": true
+  }
+]

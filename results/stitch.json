@@ -1,0 +1,12 @@
+{
+  "variant": "grouped",
+  "frames_per_chunk": [
+    293,
+    295,
+    290,
+    308
+  ],
+  "total_frames": 1186,
+  "stitch_seconds": 2.769704742997419,
+  "output": "/home/raqeeb/code/pika-chunk-test/results/raccoon_grouped_assembled.mp4"
+}

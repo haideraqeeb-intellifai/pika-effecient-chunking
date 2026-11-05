@@ -1,0 +1,50 @@
+[
+  {
+    "variant": "decode_pairs",
+    "chunk": 1,
+    "video_psnr_db": "42.892778",
+    "audio_exact": true
+  },
+  {
+    "variant": "decode_pairs",
+    "chunk": 2,
+    "video_psnr_db": "42.960047",
+    "audio_exact": true
+  },
+  {
+    "variant": "decode_pairs",
+    "chunk": 3,
+    "video_psnr_db": "42.958798",
+    "audio_exact": true
+  },
+  {
+    "variant": "decode_pairs",
+    "chunk": 4,
+    "video_psnr_db": "42.749944",
+    "audio_exact": true
+  },
+  {
+    "variant": "decode_async",
+    "chunk": 1,
+    "video_psnr_db": "44.291772",
+    "audio_exact": true
+  },
+  {
+    "variant": "decode_async",
+    "chunk": 2,
+    "video_psnr_db": "44.018393",
+    "audio_exact": true
+  },
+  {
+    "variant": "decode_async",
+    "chunk": 3,
+    "video_psnr_db": "44.729066",
+    "audio_exact": true
+  },
+  {
+    "variant": "decode_async",
+    "chunk": 4,
+    "video_psnr_db": "43.915482",
+    "audio_exact": true
+  }
+]

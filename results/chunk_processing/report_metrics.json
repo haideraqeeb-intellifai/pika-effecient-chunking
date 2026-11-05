@@ -1,0 +1,114 @@
+{
+  "reference": "raccoon_baseline_assembled.mp4",
+  "comparison": "Frame-aligned decoded stitched videos",
+  "records": {
+    "baseline": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_baseline_assembled.mp4",
+      "bytes": 25176113,
+      "psnr_db_vs_baseline": null,
+      "ssim_vs_baseline": 1.0,
+      "audio_pcm_exact_match": true
+    },
+    "shared": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_shared_assembled.mp4",
+      "bytes": 25173462,
+      "psnr_db_vs_baseline": 44.236044,
+      "ssim_vs_baseline": 0.989686,
+      "audio_pcm_exact_match": true
+    },
+    "grouped": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_grouped_assembled.mp4",
+      "bytes": 25170573,
+      "psnr_db_vs_baseline": 43.40391,
+      "ssim_vs_baseline": 0.987603,
+      "audio_pcm_exact_match": true
+    },
+    "full_pairs": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_full_pairs_assembled.mp4",
+      "bytes": 25175133,
+      "psnr_db_vs_baseline": 42.658424,
+      "ssim_vs_baseline": 0.985257,
+      "audio_pcm_exact_match": true
+    },
+    "full_async": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_full_async_assembled.mp4",
+      "bytes": 25178817,
+      "psnr_db_vs_baseline": 43.478544,
+      "ssim_vs_baseline": 0.987761,
+      "audio_pcm_exact_match": true
+    },
+    "full_pairs_async": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_full_pairs_async_assembled.mp4",
+      "bytes": 25182450,
+      "psnr_db_vs_baseline": 42.652441,
+      "ssim_vs_baseline": 0.985242,
+      "audio_pcm_exact_match": true
+    },
+    "full_deferred_parallel": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_full_deferred_parallel_assembled.mp4",
+      "bytes": 25178156,
+      "psnr_db_vs_baseline": 43.662438,
+      "ssim_vs_baseline": 0.988304,
+      "audio_pcm_exact_match": true
+    },
+    "full_nvenc_single": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_full_nvenc_single_assembled.mp4",
+      "bytes": 67618038,
+      "psnr_db_vs_baseline": 42.07154,
+      "ssim_vs_baseline": 0.982988,
+      "audio_pcm_exact_match": true
+    },
+    "full_nvenc_matched": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 1186,
+      "fps": "24/1",
+      "seconds": 49.416667,
+      "video": "raccoon_full_nvenc_matched_assembled.mp4",
+      "bytes": 24501843,
+      "psnr_db_vs_baseline": 42.362157,
+      "ssim_vs_baseline": 0.984462,
+      "audio_pcm_exact_match": true
+    }
+  }
+}

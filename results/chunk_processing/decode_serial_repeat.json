@@ -1,0 +1,657 @@
+{
+  "seconds": 143.32207978400402,
+  "stages": {
+    "nodes": [
+      {
+        "node_id": "audio_1",
+        "class_type": "LoadAudio",
+        "duration_seconds": 0.0165,
+        "before": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        },
+        "after": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        }
+      },
+      {
+        "node_id": "audio_0",
+        "class_type": "LoadAudio",
+        "duration_seconds": 0.0162,
+        "before": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        },
+        "after": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        }
+      },
+      {
+        "node_id": "audio_2",
+        "class_type": "LoadAudio",
+        "duration_seconds": 0.0152,
+        "before": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        },
+        "after": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        }
+      },
+      {
+        "node_id": "audio_3",
+        "class_type": "LoadAudio",
+        "duration_seconds": 0.0161,
+        "before": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        },
+        "after": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        }
+      },
+      {
+        "node_id": "vae",
+        "class_type": "VAELoader",
+        "duration_seconds": 0.0505,
+        "before": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        },
+        "after": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        }
+      },
+      {
+        "node_id": "load_1",
+        "class_type": "H3LoadLatent",
+        "duration_seconds": 0.0048,
+        "before": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        },
+        "after": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        }
+      },
+      {
+        "node_id": "decode_1",
+        "class_type": "VAEDecode",
+        "duration_seconds": 34.6392,
+        "before": {
+          "cuda_allocated_gib": 0.011,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 0.011,
+          "model_total_gib": 9.7,
+          "model_loaded_gib": 9.251,
+          "model_offloaded_gib": 0.45
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "crop_1",
+        "class_type": "ImageCrop",
+        "duration_seconds": 0.0007,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "create_1",
+        "class_type": "CreateVideo",
+        "duration_seconds": 0.0014,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "save_1",
+        "class_type": "SaveVideo",
+        "duration_seconds": 3.2603,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "load_0",
+        "class_type": "H3LoadLatent",
+        "duration_seconds": 0.0048,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "decode_0",
+        "class_type": "VAEDecode",
+        "duration_seconds": 31.2654,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "crop_0",
+        "class_type": "ImageCrop",
+        "duration_seconds": 0.0008,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "create_0",
+        "class_type": "CreateVideo",
+        "duration_seconds": 0.0005,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "save_0",
+        "class_type": "SaveVideo",
+        "duration_seconds": 3.0192,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "load_2",
+        "class_type": "H3LoadLatent",
+        "duration_seconds": 0.0042,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "decode_2",
+        "class_type": "VAEDecode",
+        "duration_seconds": 31.297,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "crop_2",
+        "class_type": "ImageCrop",
+        "duration_seconds": 0.0008,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "create_2",
+        "class_type": "CreateVideo",
+        "duration_seconds": 0.0005,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "save_2",
+        "class_type": "SaveVideo",
+        "duration_seconds": 2.9975,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "load_3",
+        "class_type": "H3LoadLatent",
+        "duration_seconds": 0.0046,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "decode_3",
+        "class_type": "VAEDecode",
+        "duration_seconds": 33.1548,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "crop_3",
+        "class_type": "ImageCrop",
+        "duration_seconds": 0.0008,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "create_3",
+        "class_type": "CreateVideo",
+        "duration_seconds": 0.0005,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      },
+      {
+        "node_id": "save_3",
+        "class_type": "SaveVideo",
+        "duration_seconds": 3.2029,
+        "before": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        },
+        "after": {
+          "cuda_allocated_gib": 0.012,
+          "cuda_reserved_gib": 0.02,
+          "cuda_peak_allocated_gib": 4.954,
+          "model_total_gib": 14.55,
+          "model_loaded_gib": 13.876,
+          "model_offloaded_gib": 0.674
+        }
+      }
+    ],
+    "stages": [
+      {
+        "stage": "model_load",
+        "duration_seconds": 0.0505,
+        "node_count": 1,
+        "peak_cuda_allocated_gib": 0.011,
+        "peak_model_offloaded_gib": 0.45,
+        "mean_model_offloaded_gib": 0.45,
+        "gpu": {
+          "sample_count": 0,
+          "error": "no samples"
+        }
+      },
+      {
+        "stage": "condition_pack",
+        "duration_seconds": 0.064,
+        "node_count": 4,
+        "peak_cuda_allocated_gib": 0.011,
+        "peak_model_offloaded_gib": 0.45,
+        "mean_model_offloaded_gib": 0.45,
+        "gpu": {
+          "sample_count": 1,
+          "observed_sample_hz": 0.0,
+          "gpu_util_mean_pct": 0.0,
+          "gpu_util_p95_pct": 0.0,
+          "memory_used_peak_gib": 10.46,
+          "model_offloaded_mean_gib": 0.45,
+          "model_offloaded_peak_gib": 0.45,
+          "power_mean_w": 67.73,
+          "power_peak_w": 67.73,
+          "energy_wh_estimate": 0.0,
+          "temperature_peak_c": 51.0,
+          "pcie_rx_gib_estimate": 0.0,
+          "pcie_tx_gib_estimate": 0.0
+        },
+        "model_offload_sample_count": 1
+      },
+      {
+        "stage": "generation",
+        "duration_seconds": 0.0184,
+        "node_count": 4,
+        "peak_cuda_allocated_gib": 4.954,
+        "peak_model_offloaded_gib": 0.674,
+        "mean_model_offloaded_gib": 0.618,
+        "gpu": {
+          "sample_count": 0,
+          "error": "no samples"
+        }
+      },
+      {
+        "stage": "video_decode",
+        "duration_seconds": 130.3564,
+        "node_count": 4,
+        "peak_cuda_allocated_gib": 4.954,
+        "peak_model_offloaded_gib": 4.799,
+        "mean_model_offloaded_gib": 0.699,
+        "gpu": {
+          "sample_count": 652,
+          "observed_sample_hz": 4.66,
+          "gpu_util_mean_pct": 94.33,
+          "gpu_util_p95_pct": 100.0,
+          "memory_used_peak_gib": 20.558,
+          "model_offloaded_mean_gib": 0.699,
+          "model_offloaded_peak_gib": 4.799,
+          "power_mean_w": 428.35,
+          "power_peak_w": 466.92,
+          "energy_wh_estimate": 16.625,
+          "temperature_peak_c": 65.0,
+          "pcie_rx_gib_estimate": 8.772,
+          "pcie_tx_gib_estimate": 17.143
+        },
+        "model_offload_sample_count": 652
+      },
+      {
+        "stage": "crop_mux_save",
+        "duration_seconds": 12.4859,
+        "node_count": 12,
+        "peak_cuda_allocated_gib": 4.954,
+        "peak_model_offloaded_gib": 0.674,
+        "mean_model_offloaded_gib": 0.674,
+        "gpu": {
+          "sample_count": 62,
+          "observed_sample_hz": 0.56,
+          "gpu_util_mean_pct": 0.0,
+          "gpu_util_p95_pct": 0.0,
+          "memory_used_peak_gib": 15.093,
+          "model_offloaded_mean_gib": 0.674,
+          "model_offloaded_peak_gib": 0.674,
+          "power_mean_w": 79.85,
+          "power_peak_w": 102.57,
+          "energy_wh_estimate": 2.403,
+          "temperature_peak_c": 54.0,
+          "pcie_rx_gib_estimate": 0.074,
+          "pcie_tx_gib_estimate": 0.13
+        },
+        "model_offload_sample_count": 62
+      }
+    ],
+    "execution_event_seconds": 143.3188,
+    "final_memory": {
+      "cuda_allocated_gib": 0.012,
+      "cuda_reserved_gib": 0.02,
+      "cuda_peak_allocated_gib": 4.954,
+      "model_total_gib": 14.55,
+      "model_loaded_gib": 13.876,
+      "model_offloaded_gib": 0.674
+    }
+  },
+  "gpu": {
+    "sample_count": 716,
+    "observed_sample_hz": 4.99,
+    "gpu_util_mean_pct": 85.9,
+    "gpu_util_p95_pct": 100.0,
+    "memory_used_peak_gib": 20.558,
+    "model_offloaded_mean_gib": 0.696,
+    "model_offloaded_peak_gib": 4.799,
+    "power_mean_w": 397.16,
+    "power_peak_w": 466.92,
+    "energy_wh_estimate": 15.792,
+    "temperature_peak_c": 65.0,
+    "pcie_rx_gib_estimate": 8.192,
+    "pcie_tx_gib_estimate": 16.008
+  },
+  "easycache": null,
+  "spectrum": null,
+  "sol": null
+}

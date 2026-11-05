@@ -1,0 +1,22 @@
+[
+  {
+    "chunk": 1,
+    "video_psnr_db": "42.892778",
+    "audio_exact": true
+  },
+  {
+    "chunk": 2,
+    "video_psnr_db": "42.962582",
+    "audio_exact": true
+  },
+  {
+    "chunk": 3,
+    "video_psnr_db": "42.962034",
+    "audio_exact": true
+  },
+  {
+    "chunk": 4,
+    "video_psnr_db": "42.745774",
+    "audio_exact": true
+  }
+]

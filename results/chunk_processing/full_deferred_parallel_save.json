@@ -1,0 +1,25 @@
+{
+  "save_wall_seconds": 9.683441325032618,
+  "chunks": [
+    {
+      "chunk": 1,
+      "seconds": 9.554617453017272,
+      "path": "/home/raqeeb/code/pika-chunk-test/runtime/output/full_deferred_parallel/chunk_1/output_00001_.mp4"
+    },
+    {
+      "chunk": 2,
+      "seconds": 9.681704858958255,
+      "path": "/home/raqeeb/code/pika-chunk-test/runtime/output/full_deferred_parallel/chunk_2/output_00001_.mp4"
+    },
+    {
+      "chunk": 3,
+      "seconds": 9.602171736012679,
+      "path": "/home/raqeeb/code/pika-chunk-test/runtime/output/full_deferred_parallel/chunk_3/output_00001_.mp4"
+    },
+    {
+      "chunk": 4,
+      "seconds": 9.670521089050453,
+      "path": "/home/raqeeb/code/pika-chunk-test/runtime/output/full_deferred_parallel/chunk_4/output_00001_.mp4"
+    }
+  ]
+}

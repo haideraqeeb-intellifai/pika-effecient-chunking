@@ -1,0 +1,219 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "20": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "raccoon/headshot.jpg"
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "raccoon/headshot.jpg"
+    }
+  },
+  "22": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "raccoon/audio_1.wav"
+    }
+  },
+  "5": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "prompt": "How the reference pictures align with the target video \u2014 Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 12.25-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Podcast portrait matching the source image's visual style, rendering medium, texture, lighting, and mood, one stationary medium shot of the same animal in <Picture 1>. Preserve its identity, species, face, markings and natural anatomy, and the microphone, desk, chair, lighting and studio. The camera holds the original framing throughout; the desk edge, microphone and background stay fixed in the frame.\n\nThe animal is the sole speaker (S1), speaking in the supplied recorded voice: <d>[English] Hey there, scavengers! It is Rhea here, coming at you from my cozy hollow. Today, we are talking about the treasures hidden in your bins. Why toss it when you can transform it into art?</d> Finish articulating the final word, art, before relaxing during any existing quiet ending.\n\nThe animal is speaking the supplied recording as an engaged podcast host. Its existing speech-articulating anatomy forms a flowing succession of distinct speech shapes, with varied openings, narrowing and brief closures followed by reopening for the next syllable. Preserve the anatomy shown in the reference; do not add mammalian lips to a beak or invent facial structures. Opening varies naturally within each phrase. It speaks rather than holding an open pose or panting. Its brief closed shapes are normal parts of speech. During the recording's actual pauses the articulating parts rest; each new phrase resumes with its first sound.\n\nThe opening words receive the same responsive articulation as the middle words. In the final phrase the animal continues speaking until the voice finishes, then relaxes its visible speech-articulating features only during any existing quiet ending. The still reference expressions occur at the first and last instants, without an introductory pose hold or an early concluding hold.\n\nAs it speaks, the animal makes fluid human-like explanatory gestures with its existing visible natural forelimbs, only where these are already visible in the reference: one rises toward its chest and turns outward, the other offers a supporting beat, and occasionally both rise together to emphasize a point. Do not reveal hidden limbs or invent limbs to perform a gesture. Preserve natural animal visible natural forelimbs and limb proportions. These gestures accompany speech without replacing the visible speech-articulating features movements. Gentle head nods and blinking feel spontaneous. The face remains unobscured. Exactly one animal remains visible, with the same props and setting. No cuts, zooms, camera movement, added limbs, human anatomy, text or subtitles.\n\noverall_soundscape: The supplied podcast speech recording, unchanged, with its original pauses and natural ending. No added dialogue, music or effects.\n\nnon_diegetic_music: N/A",
+      "width": 736,
+      "height": 1280,
+      "length": 294,
+      "first_frame": [
+        "20",
+        0
+      ],
+      "last_frame": [
+        "21",
+        0
+      ],
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "audio": [
+        "22",
+        0
+      ]
+    }
+  },
+  "pika": {
+    "class_type": "MiniMaxH3PikaLoRA",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "pika_h3_flex_fl2va_comfy_bf16.safetensors"
+    }
+  },
+  "sage": {
+    "class_type": "MiniMaxH3SageAttentionPatch",
+    "inputs": {
+      "model": [
+        "pika",
+        0
+      ]
+    }
+  },
+  "6": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 9901
+    }
+  },
+  "7": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "sage",
+        0
+      ],
+      "conditioning": [
+        "5",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "MiniMaxH3PikaSampler",
+    "inputs": {}
+  },
+  "9": {
+    "class_type": "ManualSigmas",
+    "inputs": {
+      "sigmas": "1.000000000, 0.923076923, 0.000000000"
+    }
+  },
+  "10": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "6",
+        0
+      ],
+      "guider": [
+        "7",
+        0
+      ],
+      "sampler": [
+        "8",
+        0
+      ],
+      "sigmas": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "5",
+        1
+      ]
+    }
+  },
+  "11": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "10",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "10",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ]
+    }
+  },
+  "15": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "11",
+        0
+      ],
+      "width": 720,
+      "height": 1280,
+      "x": 8,
+      "y": 0
+    }
+  },
+  "16": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "15",
+        0
+      ],
+      "audio": [
+        "22",
+        0
+      ],
+      "fps": 24.0,
+      "bit_depth": 8
+    }
+  },
+  "17": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "16",
+        0
+      ],
+      "filename_prefix": "baseline/chunk_1/output",
+      "format": "auto",
+      "codec": "auto"
+    }
+  }
+}

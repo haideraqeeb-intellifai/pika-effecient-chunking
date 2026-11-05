@@ -1,0 +1,138 @@
+{
+  "reference_chunks": 4,
+  "gpu": "RTX 5090 32 GB",
+  "baseline_seconds": 432.484,
+  "grouped": {
+    "seconds": 415.359,
+    "gpu_peak_gib": 31.589,
+    "pcie_rx_gib": 66.989,
+    "stages_seconds": {
+      "model_load": 0.3895,
+      "condition_pack": 18.6185,
+      "optimizer_patch": 0.0005,
+      "generation": 252.4553,
+      "video_decode": 130.019,
+      "crop_mux_save": 12.8085
+    },
+    "speedup_seconds": 17.125,
+    "speedup_pct": 3.96,
+    "video_psnr_db_vs_baseline": [
+      44.128,
+      44.029,
+      45.031,
+      43.913
+    ],
+    "audio_exact_match": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "shared": {
+    "seconds": 416.641,
+    "gpu_peak_gib": 31.591,
+    "pcie_rx_gib": 187.953,
+    "stages_seconds": {
+      "model_load": 0.6081,
+      "condition_pack": 19.4366,
+      "optimizer_patch": 0.0005,
+      "generation": 252.2077,
+      "video_decode": 130.4273,
+      "crop_mux_save": 12.7262
+    },
+    "speedup_seconds": 15.842,
+    "speedup_pct": 3.66,
+    "video_psnr_db_vs_baseline": [
+      44.041,
+      44.024,
+      "inf",
+      44.249
+    ],
+    "audio_exact_match": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "repeat_1": {
+    "seconds": 104.984,
+    "gpu_peak_gib": 31.574,
+    "pcie_rx_gib": 55.143,
+    "stages_seconds": {
+      "model_load": 0.613,
+      "condition_pack": 6.5539,
+      "optimizer_patch": 0.0004,
+      "generation": 60.7785,
+      "video_decode": 32.6638,
+      "crop_mux_save": 3.4082
+    }
+  },
+  "baseline_chunks": [
+    {
+      "seconds": 104.062,
+      "gpu_peak_gib": 31.574,
+      "pcie_rx_gib": 45.144,
+      "stages_seconds": {
+        "model_load": 1.0783,
+        "condition_pack": 6.3336,
+        "optimizer_patch": 0.0004,
+        "generation": 59.7798,
+        "video_decode": 32.671,
+        "crop_mux_save": 3.3143
+      }
+    },
+    {
+      "seconds": 112.093,
+      "gpu_peak_gib": 31.583,
+      "pcie_rx_gib": 42.558,
+      "stages_seconds": {
+        "model_load": 0.9134,
+        "condition_pack": 6.0921,
+        "optimizer_patch": 0.0004,
+        "generation": 66.247,
+        "video_decode": 34.472,
+        "crop_mux_save": 3.5249
+      }
+    },
+    {
+      "seconds": 104.778,
+      "gpu_peak_gib": 31.57,
+      "pcie_rx_gib": 44.935,
+      "stages_seconds": {
+        "model_load": 0.9307,
+        "condition_pack": 6.1022,
+        "optimizer_patch": 0.0004,
+        "generation": 60.9896,
+        "video_decode": 32.6475,
+        "crop_mux_save": 3.258
+      }
+    },
+    {
+      "seconds": 111.551,
+      "gpu_peak_gib": 31.577,
+      "pcie_rx_gib": 42.764,
+      "stages_seconds": {
+        "model_load": 0.3887,
+        "condition_pack": 6.0576,
+        "optimizer_patch": 0.0004,
+        "generation": 66.5903,
+        "video_decode": 34.5702,
+        "crop_mux_save": 3.0848
+      }
+    }
+  ],
+  "stitch": {
+    "variant": "grouped",
+    "frames_per_chunk": [
+      293,
+      295,
+      290,
+      308
+    ],
+    "total_frames": 1186,
+    "stitch_seconds": 2.769704742997419,
+    "output": "/home/raqeeb/code/pika-chunk-test/results/raccoon_grouped_assembled.mp4"
+  }
+}

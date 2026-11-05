@@ -1,0 +1,37 @@
+{
+  "save_wall_seconds": 3.788734449946787,
+  "frames": 1186,
+  "frames_per_chunk": [
+    293,
+    295,
+    290,
+    308
+  ],
+  "input_shapes": [
+    [
+      294,
+      1280,
+      720,
+      3
+    ],
+    [
+      311,
+      1280,
+      720,
+      3
+    ],
+    [
+      294,
+      1280,
+      720,
+      3
+    ],
+    [
+      311,
+      1280,
+      720,
+      3
+    ]
+  ],
+  "output": "/home/raqeeb/code/pika-chunk-test/results/raccoon_full_nvenc_matched_assembled.mp4"
+}

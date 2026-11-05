@@ -1,0 +1,44 @@
+{
+  "full_async": {
+    "width": 1080,
+    "height": 1920,
+    "frames": 1186,
+    "fps": "24/1",
+    "seconds": 49.416667,
+    "bytes": 25178817,
+    "psnr_db_vs_baseline": 43.478544,
+    "ssim_vs_baseline": 0.987761,
+    "audio_exact_vs_baseline": true
+  },
+  "full_deferred_parallel": {
+    "width": 1080,
+    "height": 1920,
+    "frames": 1186,
+    "fps": "24/1",
+    "seconds": 49.416667,
+    "bytes": 25178156,
+    "psnr_db_vs_baseline": 43.662438,
+    "ssim_vs_baseline": 0.988304,
+    "audio_exact_vs_baseline": true,
+    "psnr_db_vs_async": 44.74863,
+    "ssim_vs_async": 0.990811
+  },
+  "full_nvenc_single": {
+    "width": 1080,
+    "height": 1920,
+    "frames": 1186,
+    "fps": "24/1",
+    "seconds": 49.416667,
+    "bytes": 67618038,
+    "psnr_db_vs_baseline": 42.07154,
+    "ssim_vs_baseline": 0.982988,
+    "audio_exact_vs_baseline": true,
+    "psnr_db_vs_async": 42.070084,
+    "ssim_vs_async": 0.982983
+  },
+  "full_nvenc_matched": {
+    "bytes": 24501843,
+    "psnr_db_vs_baseline": 42.362157,
+    "ssim_vs_baseline": 0.984462
+  }
+}

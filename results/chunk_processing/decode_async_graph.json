@@ -1,0 +1,285 @@
+{
+  "vae": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "load_0": {
+    "class_type": "H3LoadLatent",
+    "inputs": {
+      "index": 1
+    }
+  },
+  "audio_0": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "raccoon/audio_1.wav"
+    }
+  },
+  "decode_0": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "load_0",
+        0
+      ],
+      "vae": [
+        "vae",
+        0
+      ]
+    }
+  },
+  "crop_0": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "decode_0",
+        0
+      ],
+      "width": 720,
+      "height": 1280,
+      "x": 8,
+      "y": 0
+    }
+  },
+  "create_0": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "crop_0",
+        0
+      ],
+      "audio": [
+        "audio_0",
+        0
+      ],
+      "fps": 24.0,
+      "bit_depth": 8
+    }
+  },
+  "save_0": {
+    "class_type": "H3AsyncSave",
+    "inputs": {
+      "video": [
+        "create_0",
+        0
+      ],
+      "index": 1,
+      "variant": "decode_async"
+    }
+  },
+  "load_1": {
+    "class_type": "H3LoadLatent",
+    "inputs": {
+      "index": 2
+    }
+  },
+  "audio_1": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "raccoon/audio_2.wav"
+    }
+  },
+  "decode_1": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "load_1",
+        0
+      ],
+      "vae": [
+        "vae",
+        0
+      ]
+    }
+  },
+  "crop_1": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "decode_1",
+        0
+      ],
+      "width": 720,
+      "height": 1280,
+      "x": 8,
+      "y": 0
+    }
+  },
+  "create_1": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "crop_1",
+        0
+      ],
+      "audio": [
+        "audio_1",
+        0
+      ],
+      "fps": 24.0,
+      "bit_depth": 8
+    }
+  },
+  "save_1": {
+    "class_type": "H3AsyncSave",
+    "inputs": {
+      "video": [
+        "create_1",
+        0
+      ],
+      "index": 2,
+      "variant": "decode_async"
+    }
+  },
+  "load_2": {
+    "class_type": "H3LoadLatent",
+    "inputs": {
+      "index": 3
+    }
+  },
+  "audio_2": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "raccoon/audio_3.wav"
+    }
+  },
+  "decode_2": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "load_2",
+        0
+      ],
+      "vae": [
+        "vae",
+        0
+      ]
+    }
+  },
+  "crop_2": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "decode_2",
+        0
+      ],
+      "width": 720,
+      "height": 1280,
+      "x": 8,
+      "y": 0
+    }
+  },
+  "create_2": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "crop_2",
+        0
+      ],
+      "audio": [
+        "audio_2",
+        0
+      ],
+      "fps": 24.0,
+      "bit_depth": 8
+    }
+  },
+  "save_2": {
+    "class_type": "H3AsyncSave",
+    "inputs": {
+      "video": [
+        "create_2",
+        0
+      ],
+      "index": 3,
+      "variant": "decode_async"
+    }
+  },
+  "load_3": {
+    "class_type": "H3LoadLatent",
+    "inputs": {
+      "index": 4
+    }
+  },
+  "audio_3": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "raccoon/audio_4.wav"
+    }
+  },
+  "decode_3": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "load_3",
+        0
+      ],
+      "vae": [
+        "vae",
+        0
+      ]
+    }
+  },
+  "crop_3": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "decode_3",
+        0
+      ],
+      "width": 720,
+      "height": 1280,
+      "x": 8,
+      "y": 0
+    }
+  },
+  "create_3": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "crop_3",
+        0
+      ],
+      "audio": [
+        "audio_3",
+        0
+      ],
+      "fps": 24.0,
+      "bit_depth": 8
+    }
+  },
+  "save_3": {
+    "class_type": "H3AsyncSave",
+    "inputs": {
+      "video": [
+        "create_3",
+        0
+      ],
+      "index": 4,
+      "variant": "decode_async"
+    }
+  },
+  "wait_saves": {
+    "class_type": "H3WaitSaves",
+    "inputs": {
+      "future_0": [
+        "save_0",
+        0
+      ],
+      "future_1": [
+        "save_1",
+        0
+      ],
+      "future_2": [
+        "save_2",
+        0
+      ],
+      "future_3": [
+        "save_3",
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "chunk": 1,
+    "repeat_psnr_db": "43.941767"
+  },
+  {
+    "chunk": 2,
+    "repeat_psnr_db": "inf"
+  },
+  {
+    "chunk": 3,
+    "repeat_psnr_db": "44.247172"
+  },
+  {
+    "chunk": 4,
+    "repeat_psnr_db": "44.231208"
+  }
+]
